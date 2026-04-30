@@ -219,7 +219,7 @@ export default function Home() {
 
               <div className={styles.jobHeader}>
                 <span className={styles.jobDate}>
-                  Abril 2026 – Agosto 2026
+                  Abril 2026 - Actualmente
                 </span>
 
                 <div className={styles.jobTitleBlock}>
@@ -252,7 +252,7 @@ export default function Home() {
 
               <div className={styles.jobHeader}>
                 <span className={styles.jobDate}>
-                  Septiembre 2025 – Junio 2026
+                  Septiembre 2025 - Actualmente
                 </span>
 
                 <div className={styles.jobTitleBlock}>
@@ -292,7 +292,7 @@ export default function Home() {
 
               <div className={styles.jobHeader}>
                 <span className={styles.jobDate}>
-                  Septiembre 2023 – Junio 2025
+                  Septiembre 2023 - Junio 2025
                 </span>
 
                 <div className={styles.jobTitleBlock}>
@@ -329,7 +329,7 @@ export default function Home() {
 
               <div className={styles.jobHeader}>
                 <span className={styles.jobDate}>
-                  Septiembre 2021 – Junio 2023
+                  Septiembre 2021 - Junio 2023
                 </span>
 
                 <div className={styles.jobTitleBlock}>
