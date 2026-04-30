@@ -116,6 +116,15 @@ const config = {
         contextualSearch: true,
       },
     }),
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: 'A96FE119D1C01A11',
+      },
+    },
+  ],
 };
 
 export default config;
