@@ -109,6 +109,12 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      algolia: {
+        appId: 'U0C7ZOCB1V',
+        apiKey: '0bf20b582e223d415da977ddb863949c',
+        indexName: 'sergioausach-github-io',
+        contextualSearch: true,
+      },
     }),
 };
 

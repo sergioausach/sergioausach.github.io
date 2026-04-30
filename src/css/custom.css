@@ -185,3 +185,18 @@
   display: block;
   margin: 0 auto;
 }
+
+.navbar__items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.DocSearch-Button {
+  width: 300px;
+}
