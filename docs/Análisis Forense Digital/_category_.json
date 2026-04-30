@@ -1,0 +1,8 @@
+{
+  "label": "Análisis Forense Digital",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Rama de la ciberseguridad enfocada en la obtención y análisis de evidencias digitales en sistemas, memoria y almacenamiento para reconstruir incidentes y actividades maliciosas."
+  }
+}

@@ -1,0 +1,689 @@
+/* =========================
+   BASE
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--ifm-background-color);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.layout {
+  display: flex;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 28%;
+  height: 100vh;
+
+  padding: 0;
+}
+
+/* CONTENEDOR INTERNO */
+.sidebarContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  margin-top: 5.5rem;
+  margin-right: 1rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center; /* clave */
+  text-align: center;   /* centra texto también */
+}
+
+/* =========================
+   HEADER SIDEBAR
+========================= */
+
+.name {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0;
+
+  color: var(--ifm-font-color-base);
+}
+
+.role {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+
+  letter-spacing: 0.3px;
+
+  color: var(--ifm-font-color-base);
+  opacity: 0.85;
+}
+
+.desc {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: -0.3rem;
+  line-height: 1.4;
+}
+
+/* =========================
+   NAV
+========================= */
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.nav a {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+
+  font-size: 0.95rem;
+
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* ACTIVE SCROLL */
+.active {
+  color: #00ff88 !important;
+  font-weight: 600;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 4px;
+  height: 4px;
+
+  background: #00ff88;
+  border-radius: 50%;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  margin-left: 28%;
+  padding: 0rem;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.section {
+  padding: 0rem;
+  margin-bottom: 5rem;
+}
+
+/* =========================
+   PERFIL PROFESIONAL (AJUSTADO)
+========================= */
+
+.profileWrapper {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+
+.profileText {
+  width: 100%;
+}
+
+.profileText p {
+  margin-top: 1.9rem;
+  margin-bottom: 0rem;
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1rem;
+  opacity: 0.9;
+  padding: 1px;
+}
+
+/* =========================
+   STACK
+========================= */
+
+.stackGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.stackGrid img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+
+  transition: transform 0.2s ease;
+}
+
+.stackGrid img:hover {
+  transform: scale(1.1);
+}
+
+/* =========================
+   LABS
+========================= */
+
+.labsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.labCard {
+  padding: 1.5rem;
+
+  border-radius: 12px;
+  border: 1px solid var(--ifm-toc-border-color);
+
+  background: var(--ifm-card-background-color);
+
+  transition: transform 0.2s ease;
+}
+
+.labCard:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   ENLACES EXTERNOS
+========================= */
+
+.externalLinks {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.externalLinks a {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  opacity: 0.75;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.externalLinks a:hover {
+  opacity: 1;
+  color: var(--ifm-color-primary);
+  transform: translateX(3px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .profileWrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* =========================
+   ENLACES EXTERNOS
+========================= */
+
+.externalLinks {
+  margin-top: 3.5rem;
+
+  display: flex;
+  flex-direction: row;   /* 👈 clave: horizontal */
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 1.2rem;
+}
+
+/* links como iconos puros */
+.externalLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 10px;
+
+  color: var(--ifm-font-color-base);
+  opacity: 0.75;
+
+  transition: all 0.2s ease;
+}
+
+/* hover verde + glow */
+.externalLinks a:hover {
+  color: #00ff88;
+  opacity: 1;
+
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.35);
+}
+
+/* iconos dentro */
+.externalLinks svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* =========================
+   TOOLTIP EN ICONOS
+========================= */
+
+.externalLinks a {
+  position: relative; /* necesario para el tooltip */
+}
+
+/* texto oculto */
+.externalLinks a::after {
+  content: attr(data-tooltip);
+
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+
+  padding: 4px 8px;
+  border-radius: 6px;
+
+  font-size: 0.75rem;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* hover show */
+.externalLinks a:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(2px);
+}
+
+/* =========================
+   EXPERIENCIA LABORAL (JOB CARD)
+========================= */
+
+.job {
+  padding: 1rem;
+  border-radius: 14px;
+
+  /* igualar tamaño al perfil */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  background: transparent;
+  border: 1px solid transparent;
+
+  transition: all 0.25s ease;
+}
+
+/* SOLO SE VE AL HOVER */
+.job:hover {
+  background: var(--ifm-card-background-color);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.08);
+}
+
+/* HEADER más compacto (no extremos raros) */
+.jobHeader {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* fecha izquierda */
+.jobDate {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  white-space: nowrap;
+  min-width: 160px;
+}
+
+/* bloque título alineado a la izquierda */
+.jobTitleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* título */
+.jobTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+/* empresa */
+.jobCompany {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* hover verde SOLO título */
+.job:hover .jobTitle {
+  color: #00ff88;
+}
+
+/* descripción */
+.jobDesc {
+  margin-top: 1rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* herramientas */
+.jobTools {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* BOTONES NUEVOS (sin borde, sólidos) */
+.jobTools span {
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+
+  background: rgba(0, 255, 136, 0.12);
+  color: #00ff88;
+
+  transition: all 0.2s ease;
+}
+
+/* hover botones */
+.jobTools span:hover {
+  background: #00ff88;
+  color: #0b0f0c;
+
+  transform: translateY(-1px);
+}
+
+.jobDesc,
+.job p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* =========================
+   AVATAR SIDEBAR (SIN ESPACIADO)
+========================= */
+
+.profileAvatar {
+  margin-top: 1.4rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.profileAvatar img {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 14px;
+  object-fit: cover;
+
+  border: 2px solid var(--ifm-color-primary);
+
+  margin-top: 0;
+}
+
+#stack-tecnologico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stackGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+
+  max-width: 1200px;   /* 👈 igual que job */
+  margin: 0 auto 1.5rem auto;
+
+  padding: 1.8rem;     /* 👈 igual que job */
+  border-radius: 14px;
+
+  background: transparent;
+  border: 1px solid transparent;
+
+  justify-items: center;
+
+  transition: all 0.25s ease;
+}
+
+.stackGrid img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+
+  transition: transform 0.2s ease;
+}
+
+.stackGrid:hover {
+  background: var(--ifm-card-background-color);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.08);
+}
+
+/* =========================
+   CASOS PRÁCTICOS WRAPPER (HOVER GLOBAL)
+========================= */
+
+.casesWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  border-radius: 14px;
+
+  background: transparent;
+  border: 1px solid transparent;
+
+  transition: all 0.25s ease;
+}
+
+/* hover global (fondo general de la sección) */
+.casesWrapper:hover {
+  background: var(--ifm-card-background-color);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.08);
+}
+
+/* =========================
+   GRID
+========================= */
+
+.labsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* =========================
+   CARD INDIVIDUAL (HOVER INTERNO)
+========================= */
+
+.labCard {
+  padding: 1.8rem;
+  border-radius: 14px;
+
+  background: transparent;
+  border: 1px solid transparent;
+
+  transition: all 0.25s ease;
+}
+
+/* hover individual (microinteracción como experiencia laboral) */
+.labCard:hover {
+  background: rgba(0, 255, 136, 0.04);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px rgba(0, 255, 136, 0.10);
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+.labTitle {
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.labCard p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* =========================
+   TOOLS (IGUAL QUE JOBS)
+========================= */
+
+.jobTools {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.jobTools span {
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+
+  background: rgba(0, 255, 136, 0.12);
+  color: #00ff88;
+
+  transition: all 0.2s ease;
+}
+
+.jobTools span:hover {
+  background: #00ff88;
+  color: #0b0f0c;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   BOTÓN (CONSISTENTE CON RESTO DEL PORTFOLIO)
+========================= */
+
+.sectionButton,
+.labButton {
+  display: inline-block;
+  margin-top: 1rem;
+
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+
+  background: rgba(0, 255, 136, 0.12);
+  color: #00ff88;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+}
+
+.sectionButton:hover,
+.labButton:hover {
+  background: #00ff88;
+  color: #0b0f0c;
+  transform: translateY(-2px);
+}
+
+.sectionIntro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sectionIntro p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .labsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .labsGrid {
+    grid-template-columns: 1fr;
+  }
+}
