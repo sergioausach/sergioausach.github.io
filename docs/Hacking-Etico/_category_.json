@@ -1,8 +1,9 @@
 {
-  "label": "Hacking-Etico",
+  "label": "Hacking Ético",
   "position": 3,
   "link": {
     "type": "generated-index",
+    "slug": "/Hacking-Etico",
     "description": "Prácticas en entornos controlados en identificar y explotar vulnerabilidades en sistemas para evaluar su seguridad y mejorar su protección frente a ataques reales."
   }
 }

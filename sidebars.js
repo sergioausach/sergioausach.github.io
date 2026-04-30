@@ -11,7 +11,7 @@
  @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {
-  tutorialSidebar: [
+  CasosPracticos: [
     {
       type: 'category',
       label: 'Casos Prácticos',

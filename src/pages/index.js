@@ -8,7 +8,7 @@ import { FaLinkedin, FaFilePdf, FaLink, FaFolderOpen, FaEnvelope } from 'react-i
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
-  const [activeSection, setActiveSection] = useState('perfil-profesional');
+  const [activeSection, setActiveSection] = useState('Perfil-Profesional');
 
   useEffect(() => {
     const sections = Array.from(document.querySelectorAll('section[id]'));
@@ -58,23 +58,23 @@ export default function Home() {
             </p>
 
             <nav className={styles.nav}>
-              <a className={activeSection === 'perfil-profesional' ? styles.active : ''} href="#perfil-profesional">
+              <a className={activeSection === 'Perfil-Profesional' ? styles.active : ''} href="#Perfil-Profesional">
                 Perfil Profesional
               </a>
 
-              <a className={activeSection === 'experiencia-laboral' ? styles.active : ''} href="#experiencia-laboral">
+              <a className={activeSection === 'Experiencia-Laboral' ? styles.active : ''} href="#Experiencia-Laboral">
                 Experiencia Laboral
               </a>
 
-              <a className={activeSection === 'formacion' ? styles.active : ''} href="#formacion">
+              <a className={activeSection === 'Formacion' ? styles.active : ''} href="#Formacion">
                 Formación
               </a>
 
-              <a className={activeSection === 'stack-tecnologico' ? styles.active : ''} href="#stack-tecnologico">
+              <a className={activeSection === 'Stack-Tecnologico' ? styles.active : ''} href="#Stack-Tecnologico">
                 Stack Tecnológico
               </a>
 
-              <a className={activeSection === 'casos-practicos' ? styles.active : ''} href="#casos-practicos">
+              <a className={activeSection === 'Casos-Practicos' ? styles.active : ''} href="#Casos-Practicos">
                 Casos Prácticos
               </a>
             </nav>
@@ -99,7 +99,7 @@ export default function Home() {
                 <FaLink />
               </a>
 
-              <a href="/casos-practicos" aria-label="Casos Prácticos" data-tooltip="Casos Prácticos">
+              <a href="/Casos-Practicos" aria-label="Casos Prácticos" data-tooltip="Casos Prácticos">
                 <FaFolderOpen />
               </a>
 
@@ -111,7 +111,7 @@ export default function Home() {
         {/* ================= CONTENT ================= */}
         <div className={styles.content}>
 
-          <section id="perfil-profesional" className={styles.section}>
+          <section id="Perfil-Profesional" className={styles.section}>
             <div className={styles.profileWrapper}>
 
               <div className={styles.profileText}>
@@ -147,7 +147,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="experiencia-laboral" className={styles.section}>
+          <section id="Experiencia-Laboral" className={styles.section}>
             <div className={styles.job}>
 
               <div className={styles.jobHeader}>
@@ -214,7 +214,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="formacion" className={styles.section}>
+          <section id="Formacion" className={styles.section}>
             <div className={styles.job}>
 
               <div className={styles.jobHeader}>
@@ -360,7 +360,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="stack-tecnologico" className={styles.section}>
+          <section id="Stack-Tecnologico" className={styles.section}>
             <div className={styles.stackGrid}>
               <img src="/img/ftk-imager.png" alt="FTK Imager" />
               <img src="/img/volatility.png" alt="Volatility" />
@@ -375,7 +375,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="casos-practicos" className={styles.section}>
+          <section id="Casos-Practicos" className={styles.section}>
 
             <div className={styles.casesWrapper}>
 
@@ -384,7 +384,7 @@ export default function Home() {
                   Laboratorios y casos prácticos de ciberseguridad enfocados en DFIR, Red Team, Blue Team y hardening de sistemas.
                 </p>
 
-                <a className={styles.sectionButton} href="/casos-practicos">
+                <a className={styles.sectionButton} href="/Casos-Practicos">
                   Casos Prácticos
                 </a>
               </div>

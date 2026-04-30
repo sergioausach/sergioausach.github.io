@@ -79,7 +79,7 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'CasosPracticos',
             position: 'left',
             label: 'Casos Prácticos',
           },

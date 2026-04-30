@@ -1,8 +1,9 @@
 {
-  "label": "Try-Hack-Me",
+  "label": "Try Hack Me",
   "position": 1,
   "link": {
     "type": "generated-index",
+    "slug": "/Hacking-Etico/Try-Hack-Me",
     "description": "Prácticas de máquinas vulnerables de la plataforma Try Hack Me."
   }
 }
