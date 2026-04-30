@@ -39,7 +39,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Layout title={siteConfig.title} description="Portfolio de ciberseguridad">
+    <Layout title={siteConfig.title} description="Portfolio de Sergio Ausach | Ciberseguridad">
 
       <main className={styles.layout}>
 
