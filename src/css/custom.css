@@ -1,10 +1,11 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global Docusaurus CSS
  */
 
-/* You can override the default Infima variables here. */
+/* =========================
+   VARIABLES
+========================= */
+
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -17,7 +18,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -30,28 +30,29 @@
 }
 
 /* =========================
-   SIDEBAR ICONOS FIABLES
-   ========================= */
+   SIDEBAR ICONOS
+========================= */
 
-/* 📂 CARPETAS (por defecto) */
 .theme-doc-sidebar-item-category .menu__link::before {
   content: "📂";
   margin-right: 6px;
 }
 
-/* 📄 DOCUMENTOS con icono PDF */
 .theme-doc-sidebar-item-link .menu__link::before {
   content: "";
   display: inline-block;
   width: 22px;
   height: 22px;
   margin-right: 6px;
-
   background-image: url("/img/pdf.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/* =========================
+   TABLE OF CONTENTS
+========================= */
 
 .table-of-contents::before {
   content: "Índice";
@@ -63,140 +64,133 @@
 }
 
 /* =========================
-   NAVBAR BOTONES DERECHA
+   NAVBAR DESKTOP
 ========================= */
 
-/* quitar icono external link */
 .navbar__link[target="_blank"]::after {
   display: none !important;
 }
 
-/* botones */
 .navbar__items--right .navbar__link {
   padding: 0.4rem 0.9rem;
   border-radius: 10px;
-
   background: rgba(0, 255, 136, 0.1);
   border: 1px solid rgba(0, 255, 136, 0.2);
-
   color: #00ff88 !important;
   font-weight: 500;
-
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
-/* hover */
 .navbar__items--right .navbar__link:hover {
   background: #00ff88;
   color: #0b0f0c !important;
   box-shadow: 0 0 12px rgba(0, 255, 136, 0.3);
 }
 
-/* separación */
-.navbar__items--right .navbar__item {
-  margin-left: 0.5rem;
-}
+/* =========================
+   ICONOS NAVBAR
+========================= */
 
-.navbar__link[href*="linkedin"] {
-  display: flex;
-  align-items: center;
-}
-
-.navbar__link[href*="linkedin"]::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  margin-right: 6px;
-
-  display: inline-block;
-
-  background-image: url("/img/linkedin.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.navbar__link[href^="mailto"] {
-  display: flex;
-  align-items: center;
-}
-
-.navbar__link[href^="mailto"]::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  margin-right: 6px;
-
-  display: inline-block;
-
-  background-image: url("/img/correo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.navbar__link[href*="drive.google"] {
-  display: flex;
-  align-items: center;
-}
-
-.navbar__link[href*="drive.google"]::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  margin-right: 6px;
-
-  display: inline-block;
-
-  background-image: url("/img/cv.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
+.navbar__link[href*="linkedin"],
+.navbar__link[href^="mailto"],
+.navbar__link[href*="drive.google"],
 .navbar__link[href*="linktr.ee"] {
   display: flex;
   align-items: center;
 }
 
+.navbar__link[href*="linkedin"]::before,
+.navbar__link[href^="mailto"]::before,
+.navbar__link[href*="drive.google"]::before,
 .navbar__link[href*="linktr.ee"]::before {
   content: "";
   width: 25px;
   height: 25px;
   margin-right: 6px;
-
   display: inline-block;
-
-  background-image: url("/img/linktree.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.navbar__link[href*="linkedin"]::before { background-image: url("/img/linkedin.png"); }
+.navbar__link[href^="mailto"]::before { background-image: url("/img/correo.png"); }
+.navbar__link[href*="drive.google"]::before { background-image: url("/img/cv.png"); }
+.navbar__link[href*="linktr.ee"]::before { background-image: url("/img/linktree.png"); }
+
+/* =========================
+   CONTENIDO
+========================= */
+
 .markdown {
   text-align: justify;
-}
-
-.hash-link {
-  display: none;
 }
 
 .markdown img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
-.navbar__items {
-  display: flex;
-  align-items: center;
-}
-
-.navbar__search {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
+/* =========================
+   ALGOLIA
+========================= */
 
 .DocSearch-Button {
-  width: 300px;
+  max-width: 180px;
+  width: 100%;
+}
+
+/* =========================
+   NAVBAR MOBILE (APP STYLE)
+========================= */
+
+@media (max-width: 996px) {
+
+  /* layout navbar limpio */
+  .navbar__items {
+    gap: 0.5rem;
+    min-width: 0;
+  }
+
+  /* OCULTA links externos SOLO en header */
+  .navbar__items--right {
+    display: none !important;
+  }
+
+  /* Algolia SIEMPRE visible */
+  .navbar__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .DocSearch-Button {
+    max-width: 140px;
+  }
+}
+
+/* =========================
+   HAMBURGER MENU (APP STYLE)
+========================= */
+
+.menu__list {
+  padding: 1rem 0;
+}
+
+.menu__list-item {
+  margin: 0.4rem 0;
+}
+
+.menu__link {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  background: rgba(0, 255, 136, 0.12);
+  color: #00ff88;
 }

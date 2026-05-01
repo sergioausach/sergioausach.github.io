@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import { FaLinkedin, FaFilePdf, FaLink, FaFolderOpen, FaEnvelope } from 'react-icons/fa';
 
