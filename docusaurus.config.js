@@ -48,7 +48,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/casos-practicos',
+          routeBasePath: '/Casos-Practicos',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
@@ -94,7 +94,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://drive.google.com/file/d/1rDwqBbmyalAKrQEEjMyRwm0_PxLmpXcI/view?usp=sharing',
+            href: 'https://drive.google.com/file/d/1kmZ-IEJof4YK1pGBeL0h-OdBWKdgtmoM/view',
             label: 'CV',
             position: 'right',
           },

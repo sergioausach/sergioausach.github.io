@@ -91,7 +91,7 @@ export default function Home() {
                 <FaEnvelope />
               </a>
 
-              <a href="https://drive.google.com/file/d/1rDwqBbmyalAKrQEEjMyRwm0_PxLmpXcI/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="CV" data-tooltip="CV">
+              <a href="https://drive.google.com/file/d/1kmZ-IEJof4YK1pGBeL0h-OdBWKdgtmoM/view" target="_blank" rel="noreferrer" aria-label="CV" data-tooltip="CV">
                 <FaFilePdf />
               </a>
 
