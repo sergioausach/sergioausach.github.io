@@ -730,3 +730,47 @@ body {
     gap: 0.8rem;
   }
 }
+
+@media (max-width: 1100px) {
+
+  /* 3 columnas en tablets */
+  .stackGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1.2rem;
+  }
+
+  /* logos más pequeños pero proporcionales */
+  .stackGrid img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  /* 2 columnas en móvil grande */
+  .stackGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .stackGrid img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  /* 1 columna en móvil pequeño */
+  .stackGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stackGrid img {
+    width: 100px;
+    height: 100px;
+  }
+}
