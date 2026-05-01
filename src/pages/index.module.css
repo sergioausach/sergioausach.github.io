@@ -774,3 +774,39 @@ body {
     height: 100px;
   }
 }
+
+@media (max-width: 1100px) {
+
+  /* evita cualquier desbordamiento lateral */
+  .job,
+  .labCard {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* header de experiencia laboral */
+  .jobHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  /* fecha no empuja layout */
+  .jobDate {
+    min-width: unset;
+    white-space: normal;
+  }
+
+  /* título/empresa en verde no se sale */
+  .jobTitle,
+  .jobCompany {
+    white-space: normal;
+    max-width: 100%;
+  }
+
+  /* tools flex que no rompe */
+  .jobTools {
+    flex-wrap: wrap;
+  }
+}
