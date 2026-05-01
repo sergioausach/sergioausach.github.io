@@ -16,6 +16,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-breakpoint: 1100px;
 }
 
 [data-theme='dark'] {
@@ -157,7 +158,9 @@
 ========================= */
 
 .DocSearch-Button {
-  width: clamp(150px, 20vw, 300px);
+  width: clamp(200px, 15vw, 300px);
+  flex-shrink: 1;
+  box-sizing: border-box;
 }
 
 /* =========================
@@ -181,13 +184,20 @@
   font-size: 0.9rem;
 }
 
-.DocSearch-Button {
-  max-width: 180px;
-  width: 100%;
-}
-
-@media (max-width: 996px) {
+@media (max-width: 1100px) {
   .navbar__items--right {
     display: none !important;
+  }
+
+  .navbar__link[href="/Casos-Practicos"] {
+    display: none !important;
+  }
+
+  .navbar__toggle {
+    display: flex !important;
+  }
+
+  .navbar__items {
+    flex-wrap: nowrap;
   }
 }
