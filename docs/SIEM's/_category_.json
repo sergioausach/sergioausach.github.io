@@ -3,7 +3,7 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "slug": "/SIEMs",
+    "slug": "/SIEM's",
     "description": "Sistemas de gestión de eventos e información de seguridad que recopilan, correlacionan y analizan logs para detectar amenazas y responder a incidentes en tiempo real."
   }
 }
