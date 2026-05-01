@@ -158,20 +158,32 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   border-radius: 14px;
+
+  background: transparent;
+  border: 1px solid transparent;
+
+  transition: all 0.25s ease;
+  margin-top: 2.5rem;
+}
+
+.profileWrapper:hover {
+  background: var(--ifm-card-background-color);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.08);
 }
 
 .profileText {
   width: 100%;
 }
 
-.profileText p {
+.profileText p + p{
   margin-top: 1.9rem;
   margin-bottom: 0rem;
   text-align: justify;
-  line-height: 1.7;
   font-size: 1rem;
   opacity: 0.9;
-  padding: 1px;
+  padding: 0px;
 }
 
 /* =========================
@@ -547,6 +559,7 @@ body {
   border: 1px solid transparent;
 
   transition: all 0.25s ease;
+  transform: translateY(-3px);
 }
 
 /* hover global (fondo general de la sección) */
