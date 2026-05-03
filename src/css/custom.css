@@ -184,6 +184,43 @@
   font-size: 0.9rem;
 }
 
+div[class*="generatedIndexPage"] header h1 {
+  text-align: center;
+}
+
+div[class*="generatedIndexPage"] header p {
+  text-align: justify !important;
+}
+
+.theme-doc-markdown header h1 {
+  text-align: center !important;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.theme-code-block {
+  position: relative !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.theme-code-block pre {
+  padding-right: 2rem !important;
+}
+
+.theme-code-block .clean-btn {
+  opacity: 1 !important;
+}
+
+.theme-code-block .clean-btn:hover svg {
+  fill: var(--ifm-color-primary) !important;
+  color: var(--ifm-color-primary) !important;
+}
+
 @media (max-width: 1100px) {
   .navbar__items--right {
     display: none !important;
