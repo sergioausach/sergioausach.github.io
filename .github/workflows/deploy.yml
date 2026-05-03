@@ -33,6 +33,6 @@ jobs:
 
       - name: Trigger Algolia Crawler
         run: |
-          curl -X POST "https://crawler.algolia.com/api/1/crawlers/${{ secrets.ALGOLIA_CRAWLER_ID }}/reindex" \
+          curl -X POST "https://crawler.algolia.com/api/1/crawlers/${{ secrets.ALGOLIA_CRAWLER_ID }}/actions/run" \
           -H "Content-Type: application/json" \
           -H "Authorization: X-Algolia-API-Key ${{ secrets.ALGOLIA_API_KEY }}"
