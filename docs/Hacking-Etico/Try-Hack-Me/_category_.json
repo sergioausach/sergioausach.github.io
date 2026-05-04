@@ -4,6 +4,6 @@
   "link": {
     "type": "generated-index",
     "slug": "/Hacking-Etico/Try-Hack-Me",
-    "description": "Prácticas de máquinas vulnerables de la plataforma Try Hack Me."
+    "description": "Prácticas en máquinas vulnerables de TryHackMe orientadas a la enumeración, explotación de vulnerabilidades y análisis de técnicas de pentesting en entornos controlados."
   }
 }

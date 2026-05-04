@@ -2,7 +2,8 @@
    BASE
 ========================= */
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -47,8 +48,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  align-items: center; /* clave */
-  text-align: center;   /* centra texto también */
+  align-items: center;
+  /* clave */
+  text-align: center;
+  /* centra texto también */
 }
 
 /* =========================
@@ -146,7 +149,8 @@ body {
 .section {
   padding: 0rem;
   margin-bottom: 5rem;
-  scroll-margin-top: 90px; /* ajusta según altura real de tu navbar */
+  scroll-margin-top: 90px;
+  /* ajusta según altura real de tu navbar */
 }
 
 /* =========================
@@ -177,13 +181,17 @@ body {
   width: 100%;
 }
 
-.profileText p + p{
-  margin-top: 1.9rem;
+.profileText p {
+  margin-top: 0;
   margin-bottom: 0rem;
   text-align: justify;
   font-size: 1rem;
   opacity: 0.9;
   padding: 0px;
+}
+
+.profileText p+p {
+  margin-top: 1.9rem;
 }
 
 /* =========================
@@ -335,7 +343,8 @@ body {
 ========================= */
 
 .externalLinks a {
-  position: relative; /* necesario para el tooltip */
+  position: relative;
+  /* necesario para el tooltip */
 }
 
 /* texto oculto */
@@ -742,8 +751,8 @@ body {
 
   /* logos más pequeños pero proporcionales */
   .stackGrid img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -756,8 +765,8 @@ body {
   }
 
   .stackGrid img {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -770,8 +779,8 @@ body {
   }
 
   .stackGrid img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -803,6 +812,10 @@ body {
   .jobCompany {
     white-space: normal;
     max-width: 100%;
+  }
+
+  .jobTitle {
+    text-align: justify;
   }
 
   /* tools flex que no rompe */
