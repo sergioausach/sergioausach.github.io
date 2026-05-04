@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Sergio Ausach | Portfolio Ciberseguridad',
+  title: 'Portfolio de Ciberseguridad y Documentación Técnica',
   tagline: '',
   favicon: 'img/favicon.ico',
   trailingSlash: false,

@@ -119,32 +119,17 @@ export default function Home() {
 
               <div className={styles.profileText}>
                 <p>
-                  Administrador de Sistemas Informáticos en Red (ASIR) especializado en Ciberseguridad, Hacking Ético y Análisis Forense Digital.
+                  Administrador de Sistemas (ASIR) con enfoque en ciberseguridad, especializado en entornos de sistemas, redes y seguridad informática.
                 </p>
 
                 <p>
-                  Me enfoco en la seguridad informática en sus distintas áreas: Blue Team, con monitorización y detección de amenazas mediante Wazuh y Splunk, hardening de sistemas y gestión de firewalls.
+                  He desarrollado experiencia práctica en entornos reales y virtualizados mediante prácticas y laboratorios técnicos, trabajando con administración de sistemas Linux y Windows, redes, y fundamentos de seguridad.
                 </p>
 
                 <p>
-                  También en Red Team, con análisis de vulnerabilidades y pentesting utilizando herramientas como Nmap, Burp Suite y Metasploit, entre otras herramientas de seguridad ofensiva.
+                  Este portfolio recoge proyectos, documentación técnica y laboratorios orientados a ciberseguridad (Blue Team, Red Team y análisis forense digital), con el objetivo de demostrar capacidades prácticas y evolución técnica.
                 </p>
 
-                <p>
-                  Me especializo también en análisis forense digital (DFIR), mediante Volatility para la adquisición y análisis de evidencias en memoria RAM, y Autopsy para el análisis de evidencias en sistemas de almacenamiento en entornos comprometidos.
-                </p>
-
-                <p>
-                  Tengo experiencia en administración de sistemas Linux y Windows, incluyendo entornos Active Directory, así como en la gestión de incidencias en infraestructuras IT.
-                </p>
-
-                <p>
-                  También trabajo con entornos de virtualización y contenedores mediante Proxmox, VMware, VirtualBox y Docker.
-                </p>
-
-                <p>
-                  Perfil analítico, proactivo y orientado a la resolución de problemas, con interés en la detección de amenazas en entornos Blue Team, la realización de pruebas de seguridad en entornos Red Team y el análisis forense digital (DFIR), centrado en la adquisición, preservación y análisis de evidencias digitales en memoria RAM y sistemas de almacenamiento, aplicados en entornos reales.
-                </p>
               </div>
 
             </div>
@@ -167,7 +152,11 @@ export default function Home() {
               </div>
 
               <p className={styles.jobDesc}>
-                Resolución y gestión de incidencias en entornos IT empresariales, asegurando la continuidad del servicio mediante la administración de sistemas y usuarios en Microsoft 365, la atención de tickets con Zammad y la gestión de incidencias técnicas en infraestructuras críticas. Implementación y mantenimiento de servicios esenciales como virtualización con Proxmox, servidores web Apache, certificados SSL con OpenSSL, redes con Ubiquiti, telefonía IP con Issabel y almacenamiento NAS con Synology, junto con la documentación y estandarización de procesos en BookStack para mejorar la trazabilidad y el soporte operativo.
+                Resolución y gestión de incidencias en entornos IT empresariales, asegurando la continuidad del servicio mediante la administración de sistemas y usuarios en Microsoft 365 y la gestión de tickets con Zammad.
+
+                Participación en la administración y mantenimiento de infraestructuras IT, incluyendo virtualización con Proxmox, servidores web Apache, certificados SSL, redes empresariales, telefonía IP y almacenamiento NAS.
+
+                Elaboración de documentación técnica y estandarización de procesos en BookStack para mejorar la trazabilidad y el soporte operativo.
               </p>
 
               <div className={styles.jobTools}>
@@ -200,7 +189,15 @@ export default function Home() {
               </div>
 
               <p className={styles.jobDesc}>
-                Soporte técnico a usuarios en entornos corporativos, resolviendo incidencias tanto de hardware como de software, garantizando la continuidad operativa de los puestos de trabajo. Gestión y resolución de incidencias IT mediante diagnóstico, análisis y solución de problemas en sistemas y aplicaciones. Administración de Active Directory, incluyendo la creación y gestión de usuarios, grupos y permisos. Configuración, mantenimiento y optimización de equipos informáticos para asegurar su correcto funcionamiento. Inventariado y control de activos IT utilizando GLPI, manteniendo actualizado el registro de hardware y software de la infraestructura. Elaboración de documentación técnica para estandarizar procedimientos y facilitar la resolución de incidencias futuras.
+                Soporte técnico a usuarios en entorno corporativo, resolviendo incidencias de hardware y software para garantizar la continuidad operativa de los puestos de trabajo.
+
+                Gestión y resolución de incidencias IT mediante diagnóstico, análisis y solución de problemas en sistemas y aplicaciones.
+
+                Administración de Active Directory, incluyendo la creación y gestión de usuarios, grupos y permisos.
+
+                Inventariado y control de activos IT mediante GLPI, manteniendo actualizado el registro de hardware y software de la infraestructura.
+
+                Configuración y mantenimiento de equipos informáticos, junto con la elaboración de documentación técnica para estandarizar procedimientos y mejorar la resolución de incidencias.
               </p>
 
               <div className={styles.jobTools}>
@@ -236,7 +233,9 @@ export default function Home() {
               </div>
 
               <p className={styles.jobDesc}>
-                Formación integral en ciberseguridad y hacking ético, abarcando tanto enfoques defensivos (Blue Team) como ofensivos (Red Team), junto con análisis de amenazas, inteligencia artificial aplicada a la seguridad, cumplimiento normativo y metodologías de protección y evaluación de sistemas en entornos controlados basados en entornos reales.
+                Formación en ciberseguridad y hacking ético con enfoque integral en seguridad ofensiva (Red Team) y defensiva (Blue Team).
+
+                El programa abarca análisis de amenazas, evaluación de vulnerabilidades, metodologías de pentesting, inteligencia de seguridad y fundamentos de protección de sistemas en entornos controlados basados en escenarios reales.
               </p>
 
               <div className={styles.jobTools}>
@@ -269,7 +268,9 @@ export default function Home() {
               </div>
 
               <p className={styles.jobDesc}>
-                Especialización en ciberseguridad aplicada a entornos TI, con enfoque en seguridad informática, análisis forense digital avanzado (memoria RAM, discos y dispositivos móviles) y prácticas de hacking ético orientadas a la identificación y explotación controlada de vulnerabilidades en sistemas reales.
+                Especialización en ciberseguridad aplicada a entornos TI, con enfoque en seguridad informática, análisis forense digital y seguridad ofensiva en entornos controlados.
+
+                La formación abarca la identificación, análisis y explotación de vulnerabilidades en sistemas reales, así como técnicas de defensa, monitorización y respuesta ante incidentes en infraestructuras IT.
               </p>
 
               <div className={styles.jobTools}>
@@ -309,7 +310,9 @@ export default function Home() {
               </div>
 
               <p className={styles.jobDesc}>
-                Formación en administración de sistemas informáticos en red, centrada en la gestión de infraestructuras IT, sistemas Windows y Linux, redes, servicios y entornos Active Directory, con enfoque en la resolución de incidencias, seguridad básica y mantenimiento de sistemas en entornos empresariales.
+                Formación en Administración de Sistemas Informáticos en Red (ASIR) orientada a la gestión de infraestructuras IT, administración de sistemas Windows y Linux, redes y servicios en entornos empresariales.
+
+                Enfoque en la administración de sistemas, gestión de entornos Active Directory, virtualización, servicios de red y resolución de incidencias en infraestructura IT.
               </p>
 
               <div className={styles.jobTools}>
@@ -346,7 +349,9 @@ export default function Home() {
               </div>
 
               <p className={styles.jobDesc}>
-                 Formación en sistemas microinformáticos y redes, orientada al montaje, mantenimiento y reparación de equipos informáticos, administración básica de redes, instalación de sistemas operativos y soporte técnico a usuarios en entornos domésticos y empresariales.
+                Formación en Sistemas Microinformáticos y Redes orientada al montaje, mantenimiento y reparación de equipos informáticos, administración básica de redes, instalación de sistemas operativos y soporte técnico a usuarios en entornos domésticos y empresariales.
+
+                Base técnica en hardware, software y redes locales, con introducción a sistemas operativos y fundamentos de administración de sistemas.
               </p>
 
               <div className={styles.jobTools}>
@@ -396,7 +401,7 @@ export default function Home() {
 
                 <div className={styles.labCard}>
                   <h3 className={styles.labTitle}>Análisis de Memoria RAM</h3>
-                  <p>Investigación de procesos maliciosos en memoria volátil (RAM).</p>
+                  <p>Investigación de procesos maliciosos en memoria volátil (RAM) mediante técnicas de análisis forense digital, identificando posibles indicadores de compromiso y comportamiento sospechoso en sistemas comprometidos.</p>
 
                   <div className={styles.jobTools}>
                     <span>Volatility</span>
@@ -407,7 +412,7 @@ export default function Home() {
 
                 <div className={styles.labCard}>
                   <h3 className={styles.labTitle}>Análisis Forense de Disco</h3>
-                  <p>Análisis de evidencias en sistemas de almacenamiento.</p>
+                  <p>Análisis de evidencias en sistemas de almacenamiento mediante inspección de discos y recuperación de información relevante para la investigación de incidentes de seguridad.</p>
 
                   <div className={styles.jobTools}>
                     <span>Autopsy</span>
@@ -418,7 +423,7 @@ export default function Home() {
 
                 <div className={styles.labCard}>
                   <h3 className={styles.labTitle}>SIEM (Splunk + Wazuh)</h3>
-                  <p>Implementación de integración entre Splunk y Wazuh y correlación de eventos y monitorización centralizada.</p>
+                  <p>Configuración de un entorno de monitorización y correlación de eventos mediante integración de herramientas SIEM para detección centralizada de amenazas y análisis de logs.</p>
 
                   <div className={styles.jobTools}>
                     <span>Splunk</span>
@@ -429,7 +434,7 @@ export default function Home() {
 
                 <div className={styles.labCard}>
                   <h3 className={styles.labTitle}>Hardening SSH Linux</h3>
-                  <p>Implementación de protección contra ataques de fuerza bruta mediante Fail2Ban.</p>
+                  <p>Implementación de medidas de seguridad en servidores Linux para mitigar ataques de fuerza bruta, incluyendo endurecimiento de configuración SSH y sistemas de bloqueo automático de intentos de acceso.</p>
 
                   <div className={styles.jobTools}>
                     <span>Linux</span>
@@ -440,7 +445,7 @@ export default function Home() {
 
                 <div className={styles.labCard}>
                   <h3 className={styles.labTitle}>Pentesting Web</h3>
-                  <p>Pentesting Web en entorno controlado con SQLi.</p>
+                  <p>Evaluación de seguridad en aplicaciones web en entorno controlado, identificando y explotando vulnerabilidades comunes como inyección SQL para comprender el impacto de fallos de validación en aplicaciones.</p>
 
                   <div className={styles.jobTools}>
                     <span>SQLi</span>
@@ -451,7 +456,7 @@ export default function Home() {
 
                 <div className={styles.labCard}>
                   <h3 className={styles.labTitle}>Reconocimiento de Red</h3>
-                  <p>Enumeración de servicios y tráfico de paquetes en la red.</p>
+                  <p>Análisis de red mediante enumeración de servicios activos, identificación de hosts y captura de tráfico para entender la superficie de ataque en entornos internos.</p>
 
                   <div className={styles.jobTools}>
                     <span>Nmap</span>
