@@ -389,7 +389,7 @@ export default function Home() {
 
               <div className={styles.sectionIntro}>
                 <p>
-                  Laboratorios y casos prácticos de ciberseguridad enfocados en DFIR, Red Team, Blue Team y hardening de sistemas.
+                  Laboratorios y casos prácticos de ciberseguridad aplicados a entornos controlados, enfocados en análisis forense digital (DFIR), seguridad ofensiva (Red Team), defensiva (Blue Team) y hardening de sistemas.
                 </p>
 
                 <a className={styles.sectionButton} href="/Casos-Practicos">
