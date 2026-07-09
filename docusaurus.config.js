@@ -94,7 +94,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://drive.google.com/file/d/1kmZ-IEJof4YK1pGBeL0h-OdBWKdgtmoM/view',
+            href: 'https://drive.google.com/file/d/1JPeuqp1wqoFnG-AZrsUtur8AaFgh7cXj/view',
             label: 'CV',
             position: 'right',
           },
