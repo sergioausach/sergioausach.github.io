@@ -94,7 +94,7 @@ export default function Home() {
                 <FaEnvelope />
               </a>
 
-              <a href="https://drive.google.com/file/d/1kmZ-IEJof4YK1pGBeL0h-OdBWKdgtmoM/view" target="_blank" rel="noreferrer" aria-label="CV" data-tooltip="CV">
+              <a href="https://drive.google.com/file/d/1JPeuqp1wqoFnG-AZrsUtur8AaFgh7cXj/view" target="_blank" rel="noreferrer" aria-label="CV" data-tooltip="CV">
                 <FaFilePdf />
               </a>
 
@@ -254,7 +254,7 @@ export default function Home() {
 
               <div className={styles.jobHeader}>
                 <span className={styles.jobDate}>
-                  Septiembre 2025 - Actualmente
+                  Septiembre 2025 - Junio 2026
                 </span>
 
                 <div className={styles.jobTitleBlock}>
